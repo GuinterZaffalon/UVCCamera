@@ -261,7 +261,7 @@ struct uvc_stream_handle {
   /** Current control block */
   struct uvc_stream_ctrl cur_ctrl;
 
-  /* listeners may only access hold*, and only when holding a 
+  /* listeners may only access hold*, and only when holding a
    * lock on cb_mutex (probably signaled with cb_cond) */
   uint8_t bfh_err, hold_bfh_err;	// XXX added to keep UVC_STREAM_ERR
   uint8_t fid;

@@ -70,6 +70,8 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_EXPORT_LDLIBS += -llog
 
+LOCAL_LDFLAGS += -Wl,-z,max-page-size=16384
+
 LOCAL_WHOLE_STATIC_LIBRARIES = libusb100_static
 
 LOCAL_MODULE := libusb100
